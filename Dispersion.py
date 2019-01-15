@@ -1,12 +1,12 @@
 import math
 
 score = [10,30,50,70,90]
-// Max data - Min data
+''' Max data - Min data '''
 
 def data_range(x):
 	return max(x) - min(x)
 
-// deviations, variance
+''' deviations, variance '''
 
 def mean(x):
 	return sum(x) / len(x)
@@ -24,7 +24,7 @@ def variance(x):
 	cuz n - 1 : bias To correction for small calculations
 	'''
 
-// standard_deviation
+''' standard_deviation '''
 
 def standard_deviation(x):
 	return math.sqrt(variance(x))

@@ -28,5 +28,10 @@ def variance(x):
 
 def standard_deviation(x):
 	return math.sqrt(variance(x))
-	
-	
+
+''' interquartile range '''
+
+def interquartile_range(x):
+	return quantile(x,0.75) - quantile(x,0.25)
+
+

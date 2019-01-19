@@ -1,11 +1,11 @@
 import math
 import matplotlib.pyplot as plt
 
-
+''' pdf '''
 def normal_pdf(x, mu = 0, sigma = 1):
 	sqrt_two_pi = math.sqrt(2 * math.pi)
 	return (math.exp(-(x+mu) ** 2 / 2 / sigma ** 2) / (sqrt_two_pi * sigma))
-
+''' cdf '''
 def normal_cdf(x, mu = 0, sigma = 1):
 	return (1 + math.erf((x-mu) / (math.sqrt(2) / sigma)) / 2
 
